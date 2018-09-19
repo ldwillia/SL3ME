@@ -27,7 +27,7 @@ https://www.nrel.gov/disclaimer.html
 ASTM solar spectrum general info page and references:
 https://www.nrel.gov/grid/solar-resource/spectra-am1.5.html
 
-To make the am1.5G.dat file, copy the "Wvlgth nm" and "Global tilt  W*m-2*nm-1" columns into a blank text file and remove the headers.
+To make the am1.5G.dat file, copy the "Wvlgth nm" and "Global tilt  W*m-2*nm-1" columns into a blank text file. You can leave the headers in place (but if removed, missing the first 2 lines misses very little of the solar spectrum).
 
 
 The function expects input in the form of two lists: one a list of energy values in eV, the other a list of absorbances (in m^-1 or cm^-1 with a flag) at the energy values of the first list, and two values: the smallest direct allowed band gap of the material, and the smallest indirect band gap of the material.
