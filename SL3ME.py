@@ -14,7 +14,7 @@ def calculate_SLME( material_eV_for_absorbance_data, material_absorbance_data,
 	from numpy import sys, loadtxt, pi,  exp, zeros, linspace
 	# For flat plate solar panels, we want the "Global Tilt" spectra, this file is assumed to be in the directory
 	try:
-		solar_spectra_wavelength, solar_spectra_irradiance  = loadtxt("am1.5G.dat", usecols = [0,1], unpack = True)
+		solar_spectra_wavelength, solar_spectra_irradiance  = loadtxt("am1.5G.dat", usecols = [0,1], unpack = True, skiprows=2)
 	except OSError:
 		print('Could not locate am1.5G.dat datafile. Please place this file in the local directory.')
 		sys.exit()
