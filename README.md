@@ -16,7 +16,7 @@ also at arxiv:
 https://arxiv.org/pdf/1705.07762.pdf
 
 ################ USAGE INSTRUCTIONS #####################################
-The file SL3ME.py is a python3 library containing a single function called "calculate_SLME". It can also be called as a script to plot an example using CdTe.
+The file SL3ME.py is a python3 library containing a single function called "calculate_SLME". It can also be called as a script to plot an example using mock CdTe absorbance data.
 
 The calculate_SLME function expects a function in the directory called "am1.5G.dat". This is the AM1.5G solar spectrum, found at:
 https://www.nrel.gov/grid/solar-resource/assets/data/astmg173.xls
