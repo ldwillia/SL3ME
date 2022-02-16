@@ -91,7 +91,7 @@ def calculate_SLME( material_eV_for_absorbance_data, material_absorbance_data,
 	def neg_power(V): # Minimizing the negative of power to optimize power
 		return -power(V)
 
-	results = minimize(neg_power, x0 = [0.0] ) # passing a function as a variable, preconditioning at V=0, since this is a smooth function
+	results = minimize(neg_power, x0 = [0.0001] ) # passing a function as a variable, preconditioning at V~=0, since this is a smooth function
 	# results.x are the inputs as an array that give the highest value of Power
 	V_Pmax = float(results.x)
 	P_m = power(V_Pmax) 
