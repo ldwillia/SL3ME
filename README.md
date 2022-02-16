@@ -1,5 +1,6 @@
 # SL3ME
-A Python3 implementation of the Spectroscopic Limited Maximum Efficiency (SLME) analysis of solar absorbers
+A Python3 implementation of the Spectroscopic Limited Maximum Efficiency (SLME) analysis of solar absorbers.
+
 Originally written and maintained by Logan Williams. Original code cleaned and made more efficient by Michael Waters prior to upload.
 
 
@@ -19,7 +20,7 @@ https://arxiv.org/pdf/1705.07762.pdf
 ################ USAGE INSTRUCTIONS #####################################
 The file SL3ME.py is a python3 library containing a single function called "calculate_SLME". It can also be called as a script to plot an example using mock CdTe absorbance data.
 
-The calculate_SLME function expects a function in the directory called "am1.5G.dat". This is the AM1.5G solar spectrum, found at:
+The calculate_SLME function expects a file in the directory called "am1.5G.dat". This is the AM1.5G solar spectrum, found at:
 https://www.nrel.gov/grid/solar-resource/assets/data/astmg173.xls
 
 By accessing the AM1.5G solar spectrum file, you agree to the NREL data disclaimer:
